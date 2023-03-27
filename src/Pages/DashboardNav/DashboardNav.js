@@ -17,7 +17,7 @@ const DashboardNav = () => {
             <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="flex items-center gap-3 cursor-pointer">
                     <div className="w-6 h-6 sm:w-10 sm:h-10 bg-white rounded-full overflow-hidden">
-                        <img src={photo} alt='' />
+                        <img src={user?.photoURL || 'https://i.ibb.co/Qj8XhH5/user.png'} alt='' />
                     </div>
                 </label>
                 <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#000000] text-slate-200 rounded-box w-60 ">

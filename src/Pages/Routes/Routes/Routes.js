@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
 import DashBoard from "../../DashBoard/DashBoard";
-import Home from "../../Home/Home";
 import DashboardLayout from "../../Layout/DashboardLayout";
 import Main from "../../Layout/Main";
 import Login from "../../Login/Login";
@@ -10,11 +9,11 @@ import PrivetRoute from "../PrivetRoute/PrivetRoute";
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Login></Login>,
+        element: <Main></Main>,
         children: [
             {
                 path: '/',
-                element: <Home></Home>
+                element: <Login></Login>
             },
             {
                 path: '/login',

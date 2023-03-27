@@ -1,10 +1,6 @@
 import React from 'react';
 import chart from '../../../assets/chart.png';
 import card from '../../../assets/First Card.png';
-import card1 from '../../../assets/Card.png';
-import { Bar, BarChart, XAxis, YAxis } from 'recharts';
-import { Tooltip } from 'chart.js';
-// import { Bar, BarChart, CartesianGrid, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Rechart = () => {
     const data = [
@@ -48,27 +44,14 @@ const Rechart = () => {
     return (
         <div>
             <div className='lg:flex flex-wrap mt-10 gap-5'>
-                <BarChart width={400} height={400} data={data}>
+                {/* <BarChart width={400} height={400} data={data}>
                     <Bar dataKey="total" fill="#8884d8" />
                     <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip />
-                </BarChart>
-
-                {/* <div className='bg-[#F8F988] p-2 rounded-3xl'>
-                    <LineChart width={400} height={400} data={data}>
-                        <Line type="monotone" dataKey="total" stroke="#8884d8" />
-                        <CartesianGrid stroke="#ccc" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                    </LineChart>
-                </div> */}
-
+                </BarChart> */}
                 <img src={chart} alt="" />
                 <img src={card} alt="" className='w-[440px] h-[315px]' />
-
-                
             </div>
         </div>
     );

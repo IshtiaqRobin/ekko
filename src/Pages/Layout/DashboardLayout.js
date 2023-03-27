@@ -27,7 +27,7 @@ const DashboardLayout = () => {
         <div className='mt-8 '>
             <div className="drawer drawer-mobile ">
                 <input id="dashboard-drawer" type="checkbox" className="drawer-toggle peer" />
-                <div className="drawer-content py-1 lg:ml-[400px] mx-auto h-auto">
+                <div className="drawer-content py-1 lg:ml-[400px] mx-auto h-auto overflow-auto">
                     <Navbar></Navbar>
                     <Outlet></Outlet>
                 </div>
@@ -35,7 +35,6 @@ const DashboardLayout = () => {
                 lg:peer-checked:w-[320px] overflow-y-auto">
                     <label htmlFor="dashboard-drawer" className="bg-transparent drawer-overlay "></label>
                     <ul className="menu bg-[#F8F988] lg:rounded-3xl sm:rounded-none text-base-content font-semibold lg:w-80 pb-5 sm:w-full mb-20">
-
                         <div className=''>
                             <div className=''>
                                 <div className='w-30 h-30 mt-0 flex justify-center items-center mb-[-80px]'>
